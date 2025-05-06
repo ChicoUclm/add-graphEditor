@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: add.diagram.part.AddDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: add.diagram.edit.parts, 
+Export-Package: add.diagram.edit.parts,
  add.diagram.part,
  add.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,

@@ -17,28 +17,34 @@ var toolGroupParameters = new GmfTool!ToolGroup;
 toolGroupParameters.title = "Parameters";
 toolGroupParameters.collapsible = true;
 var toolGroupSenses = new GmfTool!ToolGroup;
-toolGroupSenses.title = "Senses and more";
+toolGroupSenses.title = "Senses";
 toolGroupSenses.collapsible = true;
+var toolGroupNotes = new GmfTool!ToolGroup;
+toolGroupNotes.title = "Notes";
+toolGroupNotes.collapsible = true;
 var toolGroupLinks = new GmfTool!ToolGroup;
 toolGroupLinks.title = "Links";
 toolGroupLinks.collapsible = true;
 palette.tools.add(toolGroupNodes);
 palette.tools.add(toolGroupParameters);
 palette.tools.add(toolGroupSenses);
+palette.tools.add(toolGroupNotes);
 palette.tools.add(toolGroupLinks);
 
 var toolGroupObjects = GmfTool!ToolGroup.all.selectOne(r|r.title = 'Objects');
 var toolGroupConnections = GmfTool!ToolGroup.all.selectOne(r|r.title = 'Connections');
 
-var Nodes : Sequence = Sequence{"Awareness","Input","Output","Data","Widget","Controller","Device"};
+var Nodes : Sequence = Sequence{"Awareness","Event","Action","Data","Widget","Controller","Device"};
 var Parameters : Sequence = Sequence{"Awareness area","Awareness dimension","Information element",
-		"Interaction","Operation","Temporality","Event","Data parameter"};
-var Senses : Sequence = Sequence {"Hear","Sight","Smell","Taste","Touch","Environment","Share","Flow"};
-var Links : Sequence = Sequence {"Dash","Link","Solid black","Solid grey"};
+		"Interaction","Operation","Temporality","Event and parameters","Data parameter"};
+var Senses : Sequence = Sequence {"Hear","Sight","Smell","Taste","Touch","Environment"};
+var NotesNodes : Sequence = Sequence {"Requirements description","Logic description"};
+var Links : Sequence = Sequence {"Described by","Characterized by","Widget Flow","Data Flow"};
 
 objectsConnectionsToPalette(Nodes, toolGroupNodes, true);
 objectsConnectionsToPalette(Parameters, toolGroupParameters, true);
 objectsConnectionsToPalette(Senses, toolGroupSenses, true);
+objectsConnectionsToPalette(NotesNodes, toolGroupNotes, true);
 objectsConnectionsToPalette(Links, toolGroupLinks, false);
 
 delete toolGroupObjects;

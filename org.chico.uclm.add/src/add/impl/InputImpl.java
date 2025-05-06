@@ -41,7 +41,7 @@ public class InputImpl extends NodeImpl implements Input {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = "Input";
+	protected static final String NAME_EDEFAULT = "Event";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.

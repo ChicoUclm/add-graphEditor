@@ -256,12 +256,17 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String Sensesandmore3Group_title;
+	public static String Senses3Group_title;
 
 	/**
 	* @generated
 	*/
-	public static String Links4Group_title;
+	public static String Notes4Group_title;
+
+	/**
+	* @generated
+	*/
+	public static String Links5Group_title;
 
 	/**
 	* @generated
@@ -276,22 +281,22 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String Input2CreationTool_title;
+	public static String Event2CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Input2CreationTool_desc;
+	public static String Event2CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Output3CreationTool_title;
+	public static String Action3CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Output3CreationTool_desc;
+	public static String Action3CreationTool_desc;
 
 	/**
 	* @generated
@@ -396,12 +401,12 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String Event7CreationTool_title;
+	public static String Eventandparameters7CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Event7CreationTool_desc;
+	public static String Eventandparameters7CreationTool_desc;
 
 	/**
 	* @generated
@@ -476,62 +481,62 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String Share7CreationTool_title;
+	public static String Requirementsdescription1CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Share7CreationTool_desc;
+	public static String Requirementsdescription1CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Flow8CreationTool_title;
+	public static String Logicdescription2CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Flow8CreationTool_desc;
+	public static String Logicdescription2CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Dash1CreationTool_title;
+	public static String Describedby1CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Dash1CreationTool_desc;
+	public static String Describedby1CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Link2CreationTool_title;
+	public static String Characterizedby2CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Link2CreationTool_desc;
+	public static String Characterizedby2CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Solidblack3CreationTool_title;
+	public static String WidgetFlow3CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Solidblack3CreationTool_desc;
+	public static String WidgetFlow3CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Solidgrey4CreationTool_title;
+	public static String DataFlow4CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Solidgrey4CreationTool_desc;
+	public static String DataFlow4CreationTool_desc;
 
 	/**
 	* @generated

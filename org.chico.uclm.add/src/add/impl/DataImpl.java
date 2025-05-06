@@ -44,7 +44,7 @@ public class DataImpl extends NodeImpl implements Data {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = "Data [Optional]";
+	protected static final String NAME_EDEFAULT = "Data";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.

@@ -28,8 +28,9 @@ public class AddPaletteFactory {
 	public void fillPalette(PaletteRoot paletteRoot) {
 		paletteRoot.add(createNodes1Group());
 		paletteRoot.add(createParameters2Group());
-		paletteRoot.add(createSensesandmore3Group());
-		paletteRoot.add(createLinks4Group());
+		paletteRoot.add(createSenses3Group());
+		paletteRoot.add(createNotes4Group());
+		paletteRoot.add(createLinks5Group());
 	}
 
 	/**
@@ -40,8 +41,8 @@ public class AddPaletteFactory {
 		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Nodes1Group_title);
 		paletteContainer.setId("createNodes1Group"); //$NON-NLS-1$
 		paletteContainer.add(createAwareness1CreationTool());
-		paletteContainer.add(createInput2CreationTool());
-		paletteContainer.add(createOutput3CreationTool());
+		paletteContainer.add(createEvent2CreationTool());
+		paletteContainer.add(createAction3CreationTool());
 		paletteContainer.add(createData4CreationTool());
 		paletteContainer.add(createWidget5CreationTool());
 		paletteContainer.add(createController6CreationTool());
@@ -62,26 +63,36 @@ public class AddPaletteFactory {
 		paletteContainer.add(createInteraction4CreationTool());
 		paletteContainer.add(createOperation5CreationTool());
 		paletteContainer.add(createTemporality6CreationTool());
-		paletteContainer.add(createEvent7CreationTool());
+		paletteContainer.add(createEventandparameters7CreationTool());
 		paletteContainer.add(createDataparameter8CreationTool());
 		return paletteContainer;
 	}
 
 	/**
-	* Creates "Senses and more" palette tool group
+	* Creates "Senses" palette tool group
 	* @generated
 	*/
-	private PaletteContainer createSensesandmore3Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Sensesandmore3Group_title);
-		paletteContainer.setId("createSensesandmore3Group"); //$NON-NLS-1$
+	private PaletteContainer createSenses3Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Senses3Group_title);
+		paletteContainer.setId("createSenses3Group"); //$NON-NLS-1$
 		paletteContainer.add(createHear1CreationTool());
 		paletteContainer.add(createSight2CreationTool());
 		paletteContainer.add(createSmell3CreationTool());
 		paletteContainer.add(createTaste4CreationTool());
 		paletteContainer.add(createTouch5CreationTool());
 		paletteContainer.add(createEnvironment6CreationTool());
-		paletteContainer.add(createShare7CreationTool());
-		paletteContainer.add(createFlow8CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+	* Creates "Notes" palette tool group
+	* @generated
+	*/
+	private PaletteContainer createNotes4Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Notes4Group_title);
+		paletteContainer.setId("createNotes4Group"); //$NON-NLS-1$
+		paletteContainer.add(createRequirementsdescription1CreationTool());
+		paletteContainer.add(createLogicdescription2CreationTool());
 		return paletteContainer;
 	}
 
@@ -89,13 +100,13 @@ public class AddPaletteFactory {
 	* Creates "Links" palette tool group
 	* @generated
 	*/
-	private PaletteContainer createLinks4Group() {
-		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Links4Group_title);
-		paletteContainer.setId("createLinks4Group"); //$NON-NLS-1$
-		paletteContainer.add(createDash1CreationTool());
-		paletteContainer.add(createLink2CreationTool());
-		paletteContainer.add(createSolidblack3CreationTool());
-		paletteContainer.add(createSolidgrey4CreationTool());
+	private PaletteContainer createLinks5Group() {
+		PaletteDrawer paletteContainer = new PaletteDrawer(Messages.Links5Group_title);
+		paletteContainer.setId("createLinks5Group"); //$NON-NLS-1$
+		paletteContainer.add(createDescribedby1CreationTool());
+		paletteContainer.add(createCharacterizedby2CreationTool());
+		paletteContainer.add(createWidgetFlow3CreationTool());
+		paletteContainer.add(createDataFlow4CreationTool());
 		return paletteContainer;
 	}
 
@@ -115,10 +126,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createInput2CreationTool() {
-		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Input2CreationTool_title,
-				Messages.Input2CreationTool_desc, Collections.singletonList(AddElementTypes.Input_2007));
-		entry.setId("createInput2CreationTool"); //$NON-NLS-1$
+	private ToolEntry createEvent2CreationTool() {
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Event2CreationTool_title,
+				Messages.Event2CreationTool_desc, Collections.singletonList(AddElementTypes.Input_2007));
+		entry.setId("createEvent2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/005-upload.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -128,10 +139,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createOutput3CreationTool() {
-		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Output3CreationTool_title,
-				Messages.Output3CreationTool_desc, Collections.singletonList(AddElementTypes.Output_2008));
-		entry.setId("createOutput3CreationTool"); //$NON-NLS-1$
+	private ToolEntry createAction3CreationTool() {
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Action3CreationTool_title,
+				Messages.Action3CreationTool_desc, Collections.singletonList(AddElementTypes.Output_2008));
+		entry.setId("createAction3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/004-download.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -275,10 +286,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createEvent7CreationTool() {
-		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Event7CreationTool_title,
-				Messages.Event7CreationTool_desc, Collections.singletonList(AddElementTypes.Event_3003));
-		entry.setId("createEvent7CreationTool"); //$NON-NLS-1$
+	private ToolEntry createEventandparameters7CreationTool() {
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Eventandparameters7CreationTool_title,
+				Messages.Eventandparameters7CreationTool_desc, Collections.singletonList(AddElementTypes.Event_3003));
+		entry.setId("createEventandparameters7CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/016-drag.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -379,10 +390,11 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createShare7CreationTool() {
-		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Share7CreationTool_title,
-				Messages.Share7CreationTool_desc, Collections.singletonList(AddElementTypes.Share_2014));
-		entry.setId("createShare7CreationTool"); //$NON-NLS-1$
+	private ToolEntry createRequirementsdescription1CreationTool() {
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Requirementsdescription1CreationTool_title,
+				Messages.Requirementsdescription1CreationTool_desc,
+				Collections.singletonList(AddElementTypes.Share_2014));
+		entry.setId("createRequirementsdescription1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/021-share.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -392,10 +404,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createFlow8CreationTool() {
-		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Flow8CreationTool_title,
-				Messages.Flow8CreationTool_desc, Collections.singletonList(AddElementTypes.Flow_2015));
-		entry.setId("createFlow8CreationTool"); //$NON-NLS-1$
+	private ToolEntry createLogicdescription2CreationTool() {
+		DefaultNodeToolEntry entry = new DefaultNodeToolEntry(Messages.Logicdescription2CreationTool_title,
+				Messages.Logicdescription2CreationTool_desc, Collections.singletonList(AddElementTypes.Flow_2015));
+		entry.setId("createLogicdescription2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/007-flow.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -405,10 +417,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createDash1CreationTool() {
-		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.Dash1CreationTool_title,
-				Messages.Dash1CreationTool_desc, Collections.singletonList(AddElementTypes.DashLink_4004));
-		entry.setId("createDash1CreationTool"); //$NON-NLS-1$
+	private ToolEntry createDescribedby1CreationTool() {
+		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.Describedby1CreationTool_title,
+				Messages.Describedby1CreationTool_desc, Collections.singletonList(AddElementTypes.DashLink_4004));
+		entry.setId("createDescribedby1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/028-dash-link.gif")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -418,10 +430,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createLink2CreationTool() {
-		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.Link2CreationTool_title,
-				Messages.Link2CreationTool_desc, Collections.singletonList(AddElementTypes.NormalLink_4001));
-		entry.setId("createLink2CreationTool"); //$NON-NLS-1$
+	private ToolEntry createCharacterizedby2CreationTool() {
+		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.Characterizedby2CreationTool_title,
+				Messages.Characterizedby2CreationTool_desc, Collections.singletonList(AddElementTypes.NormalLink_4001));
+		entry.setId("createCharacterizedby2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/027-link.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -431,10 +443,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createSolidblack3CreationTool() {
-		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.Solidblack3CreationTool_title,
-				Messages.Solidblack3CreationTool_desc, Collections.singletonList(AddElementTypes.SolidLink_4002));
-		entry.setId("createSolidblack3CreationTool"); //$NON-NLS-1$
+	private ToolEntry createWidgetFlow3CreationTool() {
+		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.WidgetFlow3CreationTool_title,
+				Messages.WidgetFlow3CreationTool_desc, Collections.singletonList(AddElementTypes.SolidLink_4002));
+		entry.setId("createWidgetFlow3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(
 				AddDiagramEditorPlugin.findImageDescriptor("/org.chico.uclm.add.figuras/images/025-solid-link.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());
@@ -444,10 +456,10 @@ public class AddPaletteFactory {
 	/**
 	* @generated
 	*/
-	private ToolEntry createSolidgrey4CreationTool() {
-		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.Solidgrey4CreationTool_title,
-				Messages.Solidgrey4CreationTool_desc, Collections.singletonList(AddElementTypes.SolidGreyLink_4003));
-		entry.setId("createSolidgrey4CreationTool"); //$NON-NLS-1$
+	private ToolEntry createDataFlow4CreationTool() {
+		DefaultLinkToolEntry entry = new DefaultLinkToolEntry(Messages.DataFlow4CreationTool_title,
+				Messages.DataFlow4CreationTool_desc, Collections.singletonList(AddElementTypes.SolidGreyLink_4003));
+		entry.setId("createDataFlow4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(AddDiagramEditorPlugin
 				.findImageDescriptor("/org.chico.uclm.add.figuras/images/026-solid-link-grey.png")); //$NON-NLS-1$
 		entry.setLargeIcon(entry.getSmallIcon());

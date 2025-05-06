@@ -17,7 +17,7 @@ package add;
  * </ul>
  *
  * @see add.AddPackage#getNormalLink()
- * @model annotation="gmf.link source='origin' target='target' tool.name='Link' style='solid' width='1' color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/027-link.png' source.constraint='self &lt;&gt; oppositeEnd' target.constraint='self &lt;&gt; oppositeEnd'"
+ * @model annotation="gmf.link source='origin' target='target' tool.name='Characterized by' style='solid' width='1' color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/027-link.png' source.constraint='self &lt;&gt; oppositeEnd' target.constraint='self &lt;&gt; oppositeEnd'"
  * @generated
  */
 public interface NormalLink extends Link {

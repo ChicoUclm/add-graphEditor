@@ -1250,22 +1250,22 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		initEClass(nodeEClass, Node.class, "Node", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(inputEClass, Input.class, "Input", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getInput_Name(), ecorePackage.getEString(), "name", "Input", 0, 1, Input.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getInput_Name(), ecorePackage.getEString(), "name", "Event", 0, 1, Input.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInput_Interaction(), this.getInteraction(), null, "interaction", null, 1, 1, Input.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInput_Temporality(), this.getTime(), null, "temporality", null, 1, 1, Input.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getInput_Event(), this.getEvent(), null, "event", null, 1, 1, Input.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(outputEClass, Output.class, "Output", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getOutput_Name(), ecorePackage.getEString(), "name", "Output", 0, 1, Output.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOutput_Name(), ecorePackage.getEString(), "name", "Action", 0, 1, Output.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOutput_Temporality(), this.getTime(), null, "temporality", null, 1, 1, Output.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getOutput_Operation(), this.getOperation(), null, "operation", null, 1, 1, Output.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(dataEClass, Data.class, "Data", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getData_Name(), ecorePackage.getEString(), "name", "Data [Optional]", 0, 1, Data.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getData_Name(), ecorePackage.getEString(), "name", "Data", 0, 1, Data.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getData_Data(), this.getDatax(), null, "data", null, 0, -1, Data.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(awarenessEClass, Awareness.class, "Awareness", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getAwareness_Name(), ecorePackage.getEString(), "name", "Awareness specification", 0, 1, Awareness.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getAwareness_Name(), ecorePackage.getEString(), "name", "Awareness characterization", 0, 1, Awareness.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAwareness_Area(), this.getArea(), null, "area", null, 1, 1, Awareness.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAwareness_Dimension(), this.getDimension(), null, "dimension", null, 1, 1, Awareness.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getAwareness_Element(), this.getElement(), null, "element", null, 1, 1, Awareness.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1423,7 +1423,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   source,
 		   new String[] {
 			   "label", "text",
-			   "tool.name", "Event",
+			   "tool.name", "Event and parameters",
 			   "tool.small.bundle", "org.chico.uclm.add.figuras",
 			   "tool.small.path", "images/016-drag.png"
 		   });
@@ -1450,6 +1450,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   source,
 		   new String[] {
 			   "label", "name",
+			   "tool.name", "Event",
 			   "figure", "rectangle",
 			   "border.color", "0,0,0",
 			   "tool.small.bundle", "org.chico.uclm.add.figuras",
@@ -1460,6 +1461,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   source,
 		   new String[] {
 			   "label", "name",
+			   "tool.name", "Action",
 			   "figure", "rectangle",
 			   "border.color", "0,0,0",
 			   "tool.small.bundle", "org.chico.uclm.add.figuras",
@@ -1602,7 +1604,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   source,
 		   new String[] {
 			   "figure", "CompartirFigura",
-			   "tool.name", "Share",
+			   "tool.name", "Requirements description",
 			   "tool.small.bundle", "org.chico.uclm.add.figuras",
 			   "tool.small.path", "images/021-share.png",
 			   "label", "name",
@@ -1616,7 +1618,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   source,
 		   new String[] {
 			   "figure", "FlujoFigura",
-			   "tool.name", "Flow",
+			   "tool.name", "Logic description",
 			   "tool.small.bundle", "org.chico.uclm.add.figuras",
 			   "tool.small.path", "images/007-flow.png",
 			   "label", "name",
@@ -1714,7 +1716,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   new String[] {
 			   "source", "origin",
 			   "target", "target",
-			   "tool.name", "Link",
+			   "tool.name", "Characterized by",
 			   "style", "solid",
 			   "width", "1",
 			   "color", "0,0,0",
@@ -1729,7 +1731,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   new String[] {
 			   "source", "origin",
 			   "target", "target",
-			   "tool.name", "Solid black",
+			   "tool.name", "Widget Flow",
 			   "style", "solid",
 			   "width", "2",
 			   "color", "0,0,0",
@@ -1745,7 +1747,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   new String[] {
 			   "source", "origin",
 			   "target", "target",
-			   "tool.name", "Solid grey",
+			   "tool.name", "Data Flow",
 			   "style", "solid",
 			   "width", "2",
 			   "color", "128,128,128",
@@ -1761,7 +1763,7 @@ public class AddPackageImpl extends EPackageImpl implements AddPackage {
 		   new String[] {
 			   "source", "origin",
 			   "target", "target",
-			   "tool.name", "Dash",
+			   "tool.name", "Described by",
 			   "style", "dash",
 			   "width", "2",
 			   "color", "0,0,0",

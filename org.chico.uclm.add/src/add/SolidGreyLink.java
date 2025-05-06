@@ -17,7 +17,7 @@ package add;
  * </ul>
  *
  * @see add.AddPackage#getSolidGreyLink()
- * @model annotation="gmf.link source='origin' target='target' tool.name='Solid grey' style='solid' width='2' color='128,128,128' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/026-solid-link-grey.png' target.decoration='arrow' source.constraint='self &lt;&gt; oppositeEnd' target.constraint='self &lt;&gt; oppositeEnd'"
+ * @model annotation="gmf.link source='origin' target='target' tool.name='Data Flow' style='solid' width='2' color='128,128,128' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/026-solid-link-grey.png' target.decoration='arrow' source.constraint='self &lt;&gt; oppositeEnd' target.constraint='self &lt;&gt; oppositeEnd'"
  * @generated
  */
 public interface SolidGreyLink extends Link {

@@ -18,19 +18,19 @@ package add;
  * </ul>
  *
  * @see add.AddPackage#getOutput()
- * @model annotation="gmf.node label='name' figure='rectangle' border.color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/004-download.png'"
+ * @model annotation="gmf.node label='name' tool.name='Action' figure='rectangle' border.color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/004-download.png'"
  * @generated
  */
 public interface Output extends Node {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * The default value is <code>"Output"</code>.
+	 * The default value is <code>"Action"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see add.AddPackage#getOutput_Name()
-	 * @model default="Output"
+	 * @model default="Action"
 	 * @generated
 	 */
 	String getName();

@@ -19,19 +19,19 @@ package add;
  * </ul>
  *
  * @see add.AddPackage#getInput()
- * @model annotation="gmf.node label='name' figure='rectangle' border.color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/005-upload.png'"
+ * @model annotation="gmf.node label='name' tool.name='Event' figure='rectangle' border.color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/005-upload.png'"
  * @generated
  */
 public interface Input extends Node {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * The default value is <code>"Input"</code>.
+	 * The default value is <code>"Event"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see add.AddPackage#getInput_Name()
-	 * @model default="Input"
+	 * @model default="Event"
 	 * @generated
 	 */
 	String getName();

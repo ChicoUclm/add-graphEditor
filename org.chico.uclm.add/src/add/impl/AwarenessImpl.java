@@ -41,7 +41,7 @@ public class AwarenessImpl extends NodeImpl implements Awareness {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = "Awareness specification";
+	protected static final String NAME_EDEFAULT = "Awareness characterization";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.

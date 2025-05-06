@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see add.AddPackage#getEvent()
- * @model annotation="gmf.node label='text' tool.name='Event' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/016-drag.png'"
+ * @model annotation="gmf.node label='text' tool.name='Event and parameters' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/016-drag.png'"
  * @generated
  */
 public interface Event extends EObject {

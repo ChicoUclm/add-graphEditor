@@ -17,7 +17,7 @@ package add;
  * </ul>
  *
  * @see add.AddPackage#getSolidLink()
- * @model annotation="gmf.link source='origin' target='target' tool.name='Solid black' style='solid' width='2' color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/025-solid-link.png' target.decoration='arrow' source.constraint='self &lt;&gt; oppositeEnd' target.constraint='self &lt;&gt; oppositeEnd'"
+ * @model annotation="gmf.link source='origin' target='target' tool.name='Widget Flow' style='solid' width='2' color='0,0,0' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/025-solid-link.png' target.decoration='arrow' source.constraint='self &lt;&gt; oppositeEnd' target.constraint='self &lt;&gt; oppositeEnd'"
  * @generated
  */
 public interface SolidLink extends Link {

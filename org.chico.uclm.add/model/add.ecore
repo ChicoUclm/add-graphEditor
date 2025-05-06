@@ -66,7 +66,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Event">
     <eAnnotations source="gmf.node">
       <details key="label" value="text"/>
-      <details key="tool.name" value="Event"/>
+      <details key="tool.name" value="Event and parameters"/>
       <details key="tool.small.bundle" value="org.chico.uclm.add.figuras"/>
       <details key="tool.small.path" value="images/016-drag.png"/>
     </eAnnotations>
@@ -97,13 +97,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="Input" eSuperTypes="#//Node">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
+      <details key="tool.name" value="Event"/>
       <details key="figure" value="rectangle"/>
       <details key="border.color" value="0,0,0"/>
       <details key="tool.small.bundle" value="org.chico.uclm.add.figuras"/>
       <details key="tool.small.path" value="images/005-upload.png"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="Input"/>
+        defaultValueLiteral="Event"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="interaction" lowerBound="1"
         eType="#//Interaction" containment="true">
       <eAnnotations source="gmf.compartment">
@@ -129,13 +130,14 @@
   <eClassifiers xsi:type="ecore:EClass" name="Output" eSuperTypes="#//Node">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
+      <details key="tool.name" value="Action"/>
       <details key="figure" value="rectangle"/>
       <details key="border.color" value="0,0,0"/>
       <details key="tool.small.bundle" value="org.chico.uclm.add.figuras"/>
       <details key="tool.small.path" value="images/004-download.png"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="Output"/>
+        defaultValueLiteral="Action"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="temporality" lowerBound="1"
         eType="#//Time" containment="true">
       <eAnnotations source="gmf.compartment">
@@ -160,7 +162,7 @@
       <details key="tool.small.path" value="images/023-data.png"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="Data [Optional]"/>
+        defaultValueLiteral="Data"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="data" upperBound="-1" eType="#//Datax"
         containment="true">
       <eAnnotations source="gmf.compartment">
@@ -178,7 +180,7 @@
       <details key="tool.small.path" value="images/009-cardiogram.png"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        defaultValueLiteral="Awareness specification"/>
+        defaultValueLiteral="Awareness characterization"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="area" lowerBound="1" eType="#//Area"
         containment="true">
       <eAnnotations source="gmf.compartment">
@@ -321,7 +323,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Share" eSuperTypes="#//NoteNode">
     <eAnnotations source="gmf.node">
       <details key="figure" value="CompartirFigura"/>
-      <details key="tool.name" value="Share"/>
+      <details key="tool.name" value="Requirements description"/>
       <details key="tool.small.bundle" value="org.chico.uclm.add.figuras"/>
       <details key="tool.small.path" value="images/021-share.png"/>
       <details key="label" value="name"/>
@@ -334,7 +336,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Flow" eSuperTypes="#//NoteNode">
     <eAnnotations source="gmf.node">
       <details key="figure" value="FlujoFigura"/>
-      <details key="tool.name" value="Flow"/>
+      <details key="tool.name" value="Logic description"/>
       <details key="tool.small.bundle" value="org.chico.uclm.add.figuras"/>
       <details key="tool.small.path" value="images/007-flow.png"/>
       <details key="label" value="name"/>
@@ -349,7 +351,7 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="origin"/>
       <details key="target" value="target"/>
-      <details key="tool.name" value="Link"/>
+      <details key="tool.name" value="Characterized by"/>
       <details key="style" value="solid"/>
       <details key="width" value="1"/>
       <details key="color" value="0,0,0"/>
@@ -367,7 +369,7 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="origin"/>
       <details key="target" value="target"/>
-      <details key="tool.name" value="Solid black"/>
+      <details key="tool.name" value="Widget Flow"/>
       <details key="style" value="solid"/>
       <details key="width" value="2"/>
       <details key="color" value="0,0,0"/>
@@ -386,7 +388,7 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="origin"/>
       <details key="target" value="target"/>
-      <details key="tool.name" value="Solid grey"/>
+      <details key="tool.name" value="Data Flow"/>
       <details key="style" value="solid"/>
       <details key="width" value="2"/>
       <details key="color" value="128,128,128"/>
@@ -405,7 +407,7 @@
     <eAnnotations source="gmf.link">
       <details key="source" value="origin"/>
       <details key="target" value="target"/>
-      <details key="tool.name" value="Dash"/>
+      <details key="tool.name" value="Described by"/>
       <details key="style" value="dash"/>
       <details key="width" value="2"/>
       <details key="color" value="0,0,0"/>

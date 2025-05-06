@@ -10,7 +10,7 @@ package add;
  *
  *
  * @see add.AddPackage#getShare()
- * @model annotation="gmf.node figure='CompartirFigura' tool.name='Share' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/021-share.png' label='name' label.icon='false' label.placement='external' resizable='false' size='16,16'"
+ * @model annotation="gmf.node figure='CompartirFigura' tool.name='Requirements description' tool.small.bundle='org.chico.uclm.add.figuras' tool.small.path='images/021-share.png' label='name' label.icon='false' label.placement='external' resizable='false' size='16,16'"
  * @generated
  */
 public interface Share extends NoteNode {

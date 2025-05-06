@@ -39,7 +39,7 @@ public class OutputImpl extends NodeImpl implements Output {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String NAME_EDEFAULT = "Output";
+	protected static final String NAME_EDEFAULT = "Action";
 
 	/**
 	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.

@@ -504,7 +504,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="add.gmftool#//@palette/@tools.2/@tools.6"/>
+          href="add.gmftool#//@palette/@tools.3/@tools.0"/>
       <diagramNode
           href="add.gmfgraph#Share"/>
     </ownedChild>
@@ -524,7 +524,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="add.gmftool#//@palette/@tools.2/@tools.7"/>
+          href="add.gmftool#//@palette/@tools.3/@tools.1"/>
       <diagramNode
           href="add.gmfgraph#Flow"/>
     </ownedChild>
@@ -536,7 +536,7 @@
         href="add.ecore#//ADDDiagram/links"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="add.gmftool#//@palette/@tools.3/@tools.1"/>
+        href="add.gmftool#//@palette/@tools.4/@tools.1"/>
     <diagramLink
         href="add.gmfgraph#NormalLink"/>
     <sourceMetaFeature
@@ -559,7 +559,7 @@
         href="add.ecore#//ADDDiagram/links"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="add.gmftool#//@palette/@tools.3/@tools.2"/>
+        href="add.gmftool#//@palette/@tools.4/@tools.2"/>
     <diagramLink
         href="add.gmfgraph#SolidLink"/>
     <sourceMetaFeature
@@ -582,7 +582,7 @@
         href="add.ecore#//ADDDiagram/links"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="add.gmftool#//@palette/@tools.3/@tools.3"/>
+        href="add.gmftool#//@palette/@tools.4/@tools.3"/>
     <diagramLink
         href="add.gmfgraph#SolidGreyLink"/>
     <sourceMetaFeature
@@ -605,7 +605,7 @@
         href="add.ecore#//ADDDiagram/links"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="add.gmftool#//@palette/@tools.3/@tools.0"/>
+        href="add.gmftool#//@palette/@tools.4/@tools.0"/>
     <diagramLink
         href="add.gmfgraph#DashLink"/>
     <sourceMetaFeature

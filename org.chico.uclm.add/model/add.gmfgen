@@ -574,8 +574,8 @@
     <palette>
       <groups title="Nodes" collapse="true">
         <entries xsi:type="gmfgen:ToolEntry" title="Awareness" description="Create new Awareness" smallIconPath="/org.chico.uclm.add.figuras/images/009-cardiogram.png" genNodes="//@diagram/@topLevelNodes.9"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Input" description="Create new Input" smallIconPath="/org.chico.uclm.add.figuras/images/005-upload.png" genNodes="//@diagram/@topLevelNodes.6"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Output" description="Create new Output" smallIconPath="/org.chico.uclm.add.figuras/images/004-download.png" genNodes="//@diagram/@topLevelNodes.7"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Event" description="Create new Event" smallIconPath="/org.chico.uclm.add.figuras/images/005-upload.png" genNodes="//@diagram/@topLevelNodes.6"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Action" description="Create new Action" smallIconPath="/org.chico.uclm.add.figuras/images/004-download.png" genNodes="//@diagram/@topLevelNodes.7"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Data" description="Create new Data" smallIconPath="/org.chico.uclm.add.figuras/images/023-data.png" genNodes="//@diagram/@topLevelNodes.8"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Widget" description="Create new Widget" smallIconPath="/org.chico.uclm.add.figuras/images/015-radar.png" genNodes="//@diagram/@topLevelNodes.10"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Controller" description="Create new Controller" smallIconPath="/org.chico.uclm.add.figuras/images/013-cogwheel.png" genNodes="//@diagram/@topLevelNodes.12"/>
@@ -588,24 +588,26 @@
         <entries xsi:type="gmfgen:ToolEntry" title="Interaction" description="Create new Interaction" smallIconPath="/org.chico.uclm.add.figuras/images/011-mouse.png" genNodes="//@diagram/@childNodes.0"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Operation" description="Create new Operation" smallIconPath="/org.chico.uclm.add.figuras/images/006-sports-and-competition.png" genNodes="//@diagram/@childNodes.4"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Temporality" description="Create new Temporality" smallIconPath="/org.chico.uclm.add.figuras/images/010-alarm.png" genNodes="//@diagram/@childNodes.1 //@diagram/@childNodes.3"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Event" description="Create new Event" smallIconPath="/org.chico.uclm.add.figuras/images/016-drag.png" genNodes="//@diagram/@childNodes.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Event and parameters" description="Create new Event and parameters" smallIconPath="/org.chico.uclm.add.figuras/images/016-drag.png" genNodes="//@diagram/@childNodes.2"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Data parameter" description="Create new Data parameter" smallIconPath="/org.chico.uclm.add.figuras/images/024-bit.png" genNodes="//@diagram/@childNodes.5"/>
       </groups>
-      <groups title="Senses and more" collapse="true">
+      <groups title="Senses" collapse="true">
         <entries xsi:type="gmfgen:ToolEntry" title="Hear" description="Create new Hear" smallIconPath="/org.chico.uclm.add.figuras/images/019-ear.png" genNodes="//@diagram/@topLevelNodes.3"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Sight" description="Create new Sight" smallIconPath="/org.chico.uclm.add.figuras/images/008-eye.png" genNodes="//@diagram/@topLevelNodes.0"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Smell" description="Create new Smell" smallIconPath="/org.chico.uclm.add.figuras/images/020-nose.png" genNodes="//@diagram/@topLevelNodes.4"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Taste" description="Create new Taste" smallIconPath="/org.chico.uclm.add.figuras/images/018-tongue.png" genNodes="//@diagram/@topLevelNodes.2"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Touch" description="Create new Touch" smallIconPath="/org.chico.uclm.add.figuras/images/017-hold.png" genNodes="//@diagram/@topLevelNodes.1"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Environment" description="Create new Environment" smallIconPath="/org.chico.uclm.add.figuras/images/022-sensor.png" genNodes="//@diagram/@topLevelNodes.5"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Share" description="Create new Share" smallIconPath="/org.chico.uclm.add.figuras/images/021-share.png" genNodes="//@diagram/@topLevelNodes.13"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Flow" description="Create new Flow" smallIconPath="/org.chico.uclm.add.figuras/images/007-flow.png" genNodes="//@diagram/@topLevelNodes.14"/>
+      </groups>
+      <groups title="Notes" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Requirements description" description="Create new Requirements description" smallIconPath="/org.chico.uclm.add.figuras/images/021-share.png" genNodes="//@diagram/@topLevelNodes.13"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Logic description" description="Create new Logic description" smallIconPath="/org.chico.uclm.add.figuras/images/007-flow.png" genNodes="//@diagram/@topLevelNodes.14"/>
       </groups>
       <groups title="Links" collapse="true">
-        <entries xsi:type="gmfgen:ToolEntry" title="Dash" description="Create new Dash" smallIconPath="/org.chico.uclm.add.figuras/images/028-dash-link.gif" genLinks="//@diagram/@links.3"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Link" description="Create new Link" smallIconPath="/org.chico.uclm.add.figuras/images/027-link.png" genLinks="//@diagram/@links.0"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Solid black" description="Create new Solid black" smallIconPath="/org.chico.uclm.add.figuras/images/025-solid-link.png" genLinks="//@diagram/@links.1"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Solid grey" description="Create new Solid grey" smallIconPath="/org.chico.uclm.add.figuras/images/026-solid-link-grey.png" genLinks="//@diagram/@links.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Described by" description="Create new Described by" smallIconPath="/org.chico.uclm.add.figuras/images/028-dash-link.gif" genLinks="//@diagram/@links.3"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Characterized by" description="Create new Characterized by" smallIconPath="/org.chico.uclm.add.figuras/images/027-link.png" genLinks="//@diagram/@links.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Widget Flow" description="Create new Widget Flow" smallIconPath="/org.chico.uclm.add.figuras/images/025-solid-link.png" genLinks="//@diagram/@links.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Data Flow" description="Create new Data Flow" smallIconPath="/org.chico.uclm.add.figuras/images/026-solid-link-grey.png" genLinks="//@diagram/@links.2"/>
       </groups>
     </palette>
     <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="org.chico.uclm.add.diagram.general" name="Add Diagram">

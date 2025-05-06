@@ -23,8 +23,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Input"
-          description="Create new Input">
+          title="Event"
+          description="Create new Event">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/005-upload.png"
@@ -34,8 +34,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Output"
-          description="Create new Output">
+          title="Action"
+          description="Create new Action">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/004-download.png"
@@ -160,8 +160,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Event"
-          description="Create new Event">
+          title="Event and parameters"
+          description="Create new Event and parameters">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/016-drag.png"
@@ -183,7 +183,7 @@
     </tools>
     <tools
         xsi:type="gmftool:ToolGroup"
-        title="Senses and more"
+        title="Senses"
         collapsible="true">
       <tools
           xsi:type="gmftool:CreationTool"
@@ -251,10 +251,15 @@
         <largeIcon
             xsi:type="gmftool:DefaultImage"/>
       </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Notes"
+        collapsible="true">
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Share"
-          description="Create new Share">
+          title="Requirements description"
+          description="Create new Requirements description">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/021-share.png"
@@ -264,8 +269,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Flow"
-          description="Create new Flow">
+          title="Logic description"
+          description="Create new Logic description">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/007-flow.png"
@@ -280,8 +285,8 @@
         collapsible="true">
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Dash"
-          description="Create new Dash">
+          title="Described by"
+          description="Create new Described by">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/028-dash-link.gif"
@@ -291,8 +296,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Link"
-          description="Create new Link">
+          title="Characterized by"
+          description="Create new Characterized by">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/027-link.png"
@@ -302,8 +307,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Solid black"
-          description="Create new Solid black">
+          title="Widget Flow"
+          description="Create new Widget Flow">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/025-solid-link.png"
@@ -313,8 +318,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Solid grey"
-          description="Create new Solid grey">
+          title="Data Flow"
+          description="Create new Data Flow">
         <smallIcon
             xsi:type="gmftool:BundleImage"
             path="images/026-solid-link-grey.png"

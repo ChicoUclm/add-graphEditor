@@ -46,7 +46,7 @@ class Time {
 	attr String text = "<Event temporality>";
 }
 
-@gmf.node(label="text", tool.name="Event",
+@gmf.node(label="text", tool.name="Event and parameters",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/016-drag.png")
 class Event {
 	attr String text = "<Event and parameters>";
@@ -65,14 +65,14 @@ class Datax {
 }
 
 //#########################################################
-// Nodos con diferente número de compartimentos + enlazables
+// Nodos con diferente nï¿½mero de compartimentos + enlazables
 //#########################################################
 abstract class Node {}
 
-@gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
+@gmf.node(label="name", tool.name="Event", figure="rectangle", border.color="0,0,0",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/005-upload.png")
 class Input extends Node {
-	attr String name = "Input";
+	attr String name = "Event";
 	@gmf.compartment(layout="list", collapsible="false")
 	val Interaction[1] interaction;
 	@gmf.compartment(layout="list", collapsible="false")
@@ -81,10 +81,10 @@ class Input extends Node {
 	val Event[1] event;
 }
 
-@gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
+@gmf.node(label="name", tool.name="Action", figure="rectangle", border.color="0,0,0",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/004-download.png")
 class Output extends Node {
-	attr String name = "Output";
+	attr String name = "Action";
 	@gmf.compartment(layout="list", collapsible="false")
 	val Time[1] temporality;
 	@gmf.compartment(layout="list", collapsible="false")
@@ -92,10 +92,10 @@ class Output extends Node {
 }
 
 
-@gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
+@gmf.node(label="name", figure="rectangle", border.color="0,0,0",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/023-data.png")
 class Data extends Node {
-	attr String name = "Data [Optional]";
+	attr String name = "Data";
 	@gmf.compartment(layout="list", collapsible="false")
 	val Datax[*] data;
 }
@@ -103,7 +103,7 @@ class Data extends Node {
 @gmf.node(label="name",  figure="rectangle", border.color="0,0,0",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/009-cardiogram.png")
 class Awareness extends Node {
-	attr String name = "Awareness specification";
+	attr String name = "Awareness characterization";
 	@gmf.compartment(layout="list", collapsible="false")
 	val Area[1] area;
 	@gmf.compartment(layout="list", collapsible="false")
@@ -174,12 +174,12 @@ abstract class NoteNode {
 	readonly attr String name = " ";
 }
 
-@gmf.node(figure="CompartirFigura", tool.name="Share",
+@gmf.node(figure="CompartirFigura", tool.name="Requirements description",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/021-share.png",
 			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
 class Share extends NoteNode {}
 
-@gmf.node(figure="FlujoFigura", tool.name="Flow",
+@gmf.node(figure="FlujoFigura", tool.name="Logic description",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/007-flow.png",
 			label="name", label.icon="false", label.placement="external", resizable="false", size="16,16")
 class Flow extends NoteNode {}
@@ -189,7 +189,7 @@ class Flow extends NoteNode {}
 //########
 abstract class Link{}
 
-@gmf.link(source="origin", target="target", tool.name="Link", style="solid", width="1", color="0,0,0",
+@gmf.link(source="origin", target="target", tool.name="Characterized by", style="solid", width="1", color="0,0,0",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/027-link.png",
 			source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
 class NormalLink extends Link {
@@ -198,7 +198,7 @@ class NormalLink extends Link {
 }
 
 
-@gmf.link(source="origin", target="target", tool.name="Solid black", style="solid", width="2", color="0,0,0",
+@gmf.link(source="origin", target="target", tool.name="Widget Flow", style="solid", width="2", color="0,0,0",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/025-solid-link.png",
 			target.decoration="arrow", source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
 class SolidLink extends Link {
@@ -206,7 +206,7 @@ class SolidLink extends Link {
 	ref Node[1] target;
 }
 
-@gmf.link(source="origin", target="target", tool.name="Solid grey", style="solid", width="2", color="128,128,128",
+@gmf.link(source="origin", target="target", tool.name="Data Flow", style="solid", width="2", color="128,128,128",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/026-solid-link-grey.png",
 			target.decoration="arrow", source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
 class SolidGreyLink extends Link {
@@ -214,7 +214,7 @@ class SolidGreyLink extends Link {
 	ref Node[1] target;
 }
 
-@gmf.link(source="origin", target="target", tool.name="Dash", style="dash", width="2", color="0,0,0",
+@gmf.link(source="origin", target="target", tool.name="Described by", style="dash", width="2", color="0,0,0",
 			tool.small.bundle="org.chico.uclm.add.figuras", tool.small.path="images/028-dash-link.gif",
 			target.decoration="arrow", source.constraint="self <> oppositeEnd",target.constraint="self <> oppositeEnd")
 class DashLink extends Link {

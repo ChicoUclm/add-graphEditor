@@ -25,13 +25,13 @@ package add;
 public interface Awareness extends Node {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * The default value is <code>"Awareness specification"</code>.
+	 * The default value is <code>"Awareness characterization"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see add.AddPackage#getAwareness_Name()
-	 * @model default="Awareness specification"
+	 * @model default="Awareness characterization"
 	 * @generated
 	 */
 	String getName();

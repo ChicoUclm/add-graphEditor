@@ -24,13 +24,13 @@ import org.eclipse.emf.common.util.EList;
 public interface Data extends Node {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * The default value is <code>"Data [Optional]"</code>.
+	 * The default value is <code>"Data"</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see add.AddPackage#getData_Name()
-	 * @model default="Data [Optional]"
+	 * @model default="Data"
 	 * @generated
 	 */
 	String getName();
